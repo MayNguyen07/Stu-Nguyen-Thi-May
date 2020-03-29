@@ -1,3 +1,4 @@
+
 // create class person
 class Personn {
   constructor(lastname, firstname, gender, date) {
@@ -52,7 +53,7 @@ class  extends Personn {
         return (( this.subjectSore1+this.subjectSore2+this.subjectSore3)/3)
     }
 
-    if (averageScore>= 9 && averageScore<=10  ){
+    rank(num){if (averageScore>= 9 && averageScore<=10  ){
         return console.log("Excellent");
     } else if(averageScore>= 8 && averageScore<9 ){
         return console.log("good");;\
@@ -65,6 +66,19 @@ class  extends Personn {
         return console.log("Weak");
         
 
+}}
+
+infor(){
+    console.log(" Score of first subject: " + this.subjectSore1);
+    console.log("Score of second subject: " + this.subjectSore2);
+    console.log("Score of third subject: " + this.subjectSore3);
+    console.log("Average scores: " + this.averageScore());
 }
  
 
+studentInfo(){
+    this.personInfo();
+    this.infor();
+    this.rank(this.averageScore);
+
+}
