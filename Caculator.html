@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myCalculator</title>
+  </head>
+  <style>
+    .container {
+      background: lightblue;
+      border-style: groove;
+      border-width: 1px;
+      border-color: lightsalmon;
+      margin: 100px 100px 100px 100px;
+      padding: 30px 30px 30px 30px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .container h {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+      font-size: 30px;
+      font-family: "Georgia", Times, serif;
+      margin-bottom: 40px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h><b>Caculate Math Operations</b></h>
+
+      <form>
+        <label for="firstnumber"> <b>First Number:</b></label>
+        <input type="text" id="firstnumber" name="firstnumber" /> <br />
+
+        <label for="secondnumber"><b>First Number:</b></label>
+        <input type="text" id="secondnumber" name="secondnumber" /> <br />
+
+        <div id="operate">
+          <input
+            type="radio"
+            value="add"
+            name="op"
+            class="btn btn-primary"
+          />(+) Add
+          <input
+            type="radio"
+            value="min"
+            name="op"
+            class="btn btn-primary"
+          />(-) Min
+          <input
+            type="radio"
+            value="mul"
+            name="op"
+            class="btn btn-primary"
+          />(X) Mul
+          <input
+            type="radio"
+            value="div"
+            name="op"
+            class="btn btn-primary"
+          />(/) Div
+          <input type="radio" value="Exp" name="op" class="btn btn-primary" />
+          (a^b) Exp
+        </div>
+        <button type="button" onclick="caculator(); return false;">
+          Result
+        </button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+  </body>
+  <script src="Caculator.js"></script>
+</html>

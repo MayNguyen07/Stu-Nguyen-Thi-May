@@ -1,0 +1,93 @@
+.background-black {
+  background-color: black;
+  color: white;
+}
+
+.hero-image {
+  background-image: url("./image/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 576px) {
+  .hero-image {
+    background-position: center bottom;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-image {
+    /*background-position: center -570px;*/
+  }
+}
+
+.hero-image {
+  color: white;
+  font-size: 30px;
+}
+
+/* info section */
+.text-identity {
+  background-color: whitesmoke;
+}
+
+/* Boxes section */
+.boxes h {
+  font-weight: bold;
+  font-size: 17px;
+}
+.boxes {
+  display: grid;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.boxes p {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.boxes h {
+  margin-top: 10px;
+  font-family: "Georgia", Times, serif;
+}
+
+.fas {
+  display: grid;
+  text-align: right;
+  align-items: right;
+  font-size: 50px;
+}
+/* Feedback from clients */
+
+.feedback {
+  background-color: whitesmoke;
+  padding: 40px 0 40px 0;
+}
+.feedback1 {
+  text-align: center;
+}
+.feedback2 {
+  text-align: center;
+}
+.feedback2 p {
+  text-align: left;
+  padding-left: 70px;
+}
+.feedback1 p {
+  text-align: right;
+  padding-right: 70px;
+}
+
+/* Logo */
+.logo {
+  margin-top: 50px;
+}
+/* Say hello */
+.background-main {
+  background-color: rgb(179, 133, 184);
+}
+
+.background-customer {
+  background-color: rgb(144, 180, 171);
+}
